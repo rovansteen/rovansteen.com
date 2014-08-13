@@ -9,5 +9,6 @@ twitter_username: rovansteen
 github_username:  rovansteen
 
 # Build settings
+permalink: pretty
 markdown: kramdown
 exclude: ['vendor', 'README.md', 'Gemfile', 'Gemfile.lock']
