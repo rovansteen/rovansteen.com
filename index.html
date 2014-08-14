@@ -4,20 +4,20 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+        <article class="home__intro">
+            <p>Oh hey there, I am Robert van Steen, a web developer from Amsterdam. I make things possible on the web for people that have a story to tell.</p>
+            <a href="/about">Read more about me.</a>
+        </article>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        <article class="featured-work">
+            <h2>Recent work</h2> 
+            <figure class="featured-work__figure">
+                <img src="/assets/projects/kersvers/kersvers-featured.jpg" alt="Kersvers"> 
+            </figure>
+            <div class="featured-work__description">
+                <h3>Kersvers</h3>
+                <a href="/projects/kersvers">Read more about this project</a>
+            </div>
+        </article>
 
 </div>
