@@ -11,4 +11,4 @@ github_username:  rovansteen
 # Build settings
 permalink: pretty
 markdown: kramdown
-exclude: ['vendor', 'README.md', 'Gemfile', 'Gemfile.lock']
+exclude: ['vendor', 'README.md', 'Gemfile', 'Gemfile.lock', 'node_modules', 'gulpfile.js', 'package.json']

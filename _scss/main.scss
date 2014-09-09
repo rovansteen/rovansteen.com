@@ -1,17 +1,14 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
 @charset "utf-8";
-
-
 
 // Our variables
 $base-font-family: 'ff-meta-serif-web-pro';
-$base-font-size:   16px;
+$base-font-size:   20px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
+
+$content: #505458;
 
 $text-color:       #111;
 $background-color: #fefefe;
@@ -45,6 +42,8 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
+        "page",
         "home",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "content"
 ;
