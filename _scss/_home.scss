@@ -1,0 +1,24 @@
+[am-Page~="home"], [am-Content~="home"] {
+    height: 100%;
+}
+
+[am-Page~="home"] {
+    padding: 0;
+}
+
+[am-Hero] {
+    min-height: 100%;
+    position: relative;
+}
+
+[am-Intro] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+[am-Wrapper~="intro"] {
+    max-width: 35em;
+}

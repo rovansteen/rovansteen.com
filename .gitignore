@@ -5,3 +5,4 @@ node_modules
 # Vim
 *.swp
 *.swo
+css/main.css

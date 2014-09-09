@@ -1,23 +1,21 @@
 ---
-layout: default
+layout: home
 ---
 
-<div class="home">
+<div am-Hero> 
 
-        <article class="home__intro">
-            <p>Oh hey there, I am Robert van Steen, a web developer from Amsterdam. I make things possible on the web for people that have a story to tell.</p>
-            <a href="/about">Read more about me.</a>
-        </article>
+    <article am-Intro>
+        <div am-Wrapper="intro">
+            <p>Oh hey there! I'm Robert van Steen, a web developer from Amsterdam, with a passion for developing things on the internet.</p> 
+            <a href="#work" data-section="work">View my work</a>
+        </div>
+    </article>
 
-        <article class="featured-work">
-            <h2>Recent work</h2> 
-            <figure class="featured-work__figure">
-                <img src="/assets/projects/kersvers/kersvers-featured.jpg" alt="Kersvers"> 
-            </figure>
-            <div class="featured-work__description">
-                <h3>Kersvers</h3>
-                <a href="/projects/kersvers">Read more about this project</a>
-            </div>
-        </article>
+</div>
+
+<div am-Work>
+    {% for post in site.categories.work %}
+        {{ post.content }}
+    {% endfor %}
 
 </div>

@@ -8,6 +8,10 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 
 
 /**
@@ -18,7 +22,7 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
-    color: $text-color;
+    color: $content;
     background-color: $background-color;
 }
 
@@ -152,7 +156,7 @@ pre {
 /**
  * Wrapper
  */
-.wrapper {
+[am-Wrapper] {
     max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
     max-width:         calc(800px - (#{$spacing-unit} * 2));
     margin-right: auto;
@@ -188,7 +192,7 @@ pre {
 /**
  * Icons
  */
-.icon {
+[am-Icon] {
 
     > svg {
         display: inline-block;
