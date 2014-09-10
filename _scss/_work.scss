@@ -1,0 +1,19 @@
+[am-Project] {
+    padding: 4em 0;
+}
+
+[am-Header~="project"] {
+    text-align: center;
+}
+
+[am-ProjectLogo] {
+    max-height: 8em;
+    margin-bottom: 2em;
+}
+
+[am-Project~="kersvers"] {
+}
+
+[am-Project]  p img {
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+}

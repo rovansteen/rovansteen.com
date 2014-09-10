@@ -14,8 +14,16 @@ layout: home
 </div>
 
 <div am-Work>
+
     {% for post in site.categories.work %}
-        {{ post.content }}
+        <article am-Project="{{ post.slug }}">
+            <div am-Wrapper="project">
+                <header am-Header="project">
+                    <img src="/assets/work/{{ post.slug }}/logo.png" alt="{{ post.title }}" am-ProjectLogo>
+                </header>
+                {{ post.content }}
+            </div>
+        </article>
     {% endfor %}
 
 </div>
