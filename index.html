@@ -15,15 +15,19 @@ layout: home
 
 <div am-Work>
 
-    {% for post in site.categories.work %}
-        <article am-Project="{{ post.slug }}">
-            <div am-Wrapper="project">
-                <header am-Header="project">
-                    <img src="/assets/work/{{ post.slug }}/logo.png" alt="{{ post.title }}" am-ProjectLogo>
-                </header>
-                {{ post.content }}
-            </div>
-        </article>
+    {% for weight in (1..20) %}
+        {% for post in site.categories.work %}
+            {% if post.weight == weight %}
+                <article am-Project="{{ post.slug }}">
+                    <div am-Wrapper="project">
+                        <header am-Header="project">
+                            <img src="/assets/work/{{ post.slug }}/logo.png" alt="{{ post.title }}" am-ProjectLogo>
+                        </header>
+                        {{ post.content }}
+                    </div>
+                </article>
+            {% endif %}
+        {% endfor %}
     {% endfor %}
 
 </div>
