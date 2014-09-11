@@ -1,5 +1,5 @@
 [am-Project] {
-    padding: 4em 0;
+    padding: 4em 0 8em 0;
 }
 
 [am-Header~="project"] {
@@ -8,10 +8,11 @@
 
 [am-ProjectLogo] {
     max-height: 8em;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 
 [am-Project~="kersvers"] {
+    background: #dd3c74;
 }
 
 [am-Project]  p img {

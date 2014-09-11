@@ -1,8 +1,9 @@
 ---
 layout: project
 title:  "Kersvers"
-date:  2014-09-09 22:43:00
+date:  2014-09-09 12:00:00
 category: work
 slug: kersvers
+weight: 15
 ---
 ![Kersvers](/assets/work/kersvers/shot_1.jpg)

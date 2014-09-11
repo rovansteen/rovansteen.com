@@ -1,0 +1,9 @@
+---
+layout: project
+title:  "ASVA"
+date:  2014-09-09 12:00:00
+category: work
+slug: asva
+weight: 5
+---
+![ASVA](/assets/work/asva/shot_1.jpg)
